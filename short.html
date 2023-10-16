@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
+  
 <!-- jQuery -->
 　<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <!-- FontAwesome -->
@@ -8,13 +9,33 @@
   
 <title>redirect</title>
 <meta http-equiv="refresh" content="2;url=https://discord.com/invite/YmvVdfXT4e">
+
+<style>
+    .roading-container {
+        /*背景色はグレーの半透明に設定*/
+        background-color: rgba(0,0,0,0.0);
+        /*位置を固定にする*/
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        /*横幅、高さどちらも画面いっぱいに広げる*/
+        width: 100vw;
+        height: 100vh;
+        /*横を中心にする*/
+        text-align: center;
+        /*縦を中央にする*/
+        line-height: 100vh;
+        /*最前面にする*/
+        z-index: 999; 
+        /*初期表示は非表示*/
+        display: none;
+    }
+</style>
+
 </head>
 
 <body>
 
-    <div class="container">
-        <input type="button" onclick="$('.roading-container').show();" value="表示">
-    </div>
     <div class="roading-container">
         <i class="fas fa-spinner fa-4x fa-spin"></i>
     </div>
